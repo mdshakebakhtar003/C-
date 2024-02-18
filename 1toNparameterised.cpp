@@ -1,16 +1,17 @@
 // Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
-int print(int n){ if(n==0)  return 0; 
-                    return n+print(n-1);
-                }
+void print(int i,int n){ if(i>n) return;
+                    cout<<i<<endl;
+                    print(i+1,n);
+                    
+    
+    
+}
 int main() {
             int n;
             cout<<"enter n:";
             cin>>n;
-            int sum=0;
-           int add=print(n);
-           cout<<add;
-           
+            print(1,n);
     return 0;
 }
