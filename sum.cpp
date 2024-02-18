@@ -1,26 +1,19 @@
 // Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
-int main() {
-   int m,n,i,j;
-   cout<<"enter size of arrays row m:";
-   cin>>m;
-   cout<<endl;
-   cout<<"enter size of araays column n:";
+int main() { int n;
+cout<<"enter n"<<endl;
 cin>>n;
-   int arr[m][n];
-   cout<<"enter arrays element:";;
-   for(i=0;i<=m-1;i++){
-       for(j=0;j<=n-1;j++){
-      cin>>arr[i][j];
-       }
-   }
-   int sum=0;
-     for(i=0;i<=m-1;i++){
-       for(j=0;j<=n-1;j++){
-           sum+=arr[i][j];
-         }
-     }
-     cout<<sum;
+int arr[n];
+int i;
+int sum=0;
+cout<<"enter array elements";
+for(int i=0;i<=n-1;i++){
+    cin>>arr[i];
+}
+   for(int i=0;i<=n-1;i++){
+    sum=sum+arr[i];
+}
+cout<<sum;
     return 0;
 }
