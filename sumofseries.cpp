@@ -5,14 +5,11 @@ int main() {
     int n,i;
     cout<<"Enter n:";
     cin>>n;
-    int rev=0;
-    int rem=0;
-   while(n>0){
-       rev*=10;
-       rem=n%10;
-       rev+=rem;
-       n/=10;
+    int sum=0;
+   for(i=1;i<=n;i++){
+       if(i%2==0) sum+=-i;
+       else sum+=i;
    }
-   cout<<rev<<" is reverse";
+   cout<<sum<<" is sum";
     return 0;
 }
